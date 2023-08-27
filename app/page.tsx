@@ -28,7 +28,7 @@ export default function Home() {
     setPopupItems(feedback);
   }
 
-  const [feedback, setFeedback] = useState<Feedbacks[]>([]);
+  const [feedback, setFeedback] = useState<Feedbacks[]>([{_id:"652dluwu891616", title:"Your First Feedback", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eu nulla mollis commodo. Sed tincidunt, quam sed finibus accumsan, arcu tortor dignissim justo, vel facilisis odio mi eu dui. Duis consequat, massa sit amet aliquam rhoncus, massa metus lacinia nunc, quis fermentum nunc neque nec arcu. Sed vulputate, ex id fermentum malesuada, arcu turpis pharetra lectus, quis tincidunt dui ex vel urna. Sed varius odio vel nisi lacinia, at interdum arcu tincidunt. Integer vel nisi ut est ultricies feugiat a eget mi. Fusce bibendum hendrerit tellus, at luctus nulla pharetra in. Ut ac venenatis mi. Nullam in dolor at ligula cursus fringilla. Fusce ac dolor orci. Vivamus fermentum a lectus et venenatis.", votes:20, comments:3, category:"UX"}]);
 
   useEffect(() => {
     axios.get('/api/feedback').then(res => {
