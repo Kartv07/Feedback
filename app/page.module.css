@@ -293,8 +293,8 @@
 .addCmnt {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   border-radius: 0.5rem;
