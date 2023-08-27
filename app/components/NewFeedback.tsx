@@ -30,16 +30,16 @@ export default function NewFeedback(props:Props) {
     const [detail, setDetail] = useState<string>("");
 
     const addFeeds = () =>{
-        // const newFeed : Feedbacks = {
-        //     id:Date.now(),
-        //     title:tit,
-        //     description:detail,
-        //     votes: 0,
-        //     comments:0,
-        //     category:cate,
-        // }
+        const newFeed : Feedbacks = {
+            _id:String(Date.now()),
+            title:tit,
+            description:detail,
+            votes: 0,
+            comments:0,
+            category:cate,
+        }
 
-        // props.setFeedback(prevFeedback => [...prevFeedback, newFeed]);
+        props.setFeedback(prevFeedback => [...prevFeedback, newFeed]);
         props.setNewFeedback(false);
         props.setLeftSide(false);
 
